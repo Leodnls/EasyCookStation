@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sélection du repas - Easy Cook Station</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Sélectionnez votre repas</h1>
+    </header>
+
+    <main>
+        <section id="reservation-info">
+            <p>Réservation pour le <span id="reservation-date"></span> pour <span id="reservation-duration"></span> heure(s)</p>
+            <p>Repas sélectionné : <span id="meal-name"></span></p>
+        </section>
+
+        <section id="meal-selection">
+            <label for="meal-selection">Choisir un repas :</label>
+            <select id="meal-selection" required>
+                <option value="salad">Salade César</option>
+                <option value="pasta">Pâtes Bolognaise</option>
+                <option value="sushi">Sushi Variés</option>
+            </select><br><br>
+
+            <label for="people-count">Nombre de personnes :</label>
+            <input type="number" id="people-count" min="1" required><br><br>
+
+            <h3>Prix total : <span id="total-price">0.00 €</span></h3><br><br>
+
+            <button type="submit" class="btn">Procéder au paiement</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Easy Cook Station. Tous droits réservés.</p>
+    </footer>
+
+    <script src="assets/meal-selection.js"></script>
+</body>
+</html>

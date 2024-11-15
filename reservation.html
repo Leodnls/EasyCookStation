@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation - Easy Cook Station</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        <h1>Réservez votre créneau chez Easy Cook Station</h1>
+    </header>
+
+    <main>
+        <section id="reservation-form">
+            <form>
+                <div class="form-group">
+                    <label for="date">Sélectionnez votre créneau</label>
+                    <input type="datetime-local" id="date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="duration">Durée (en heures)</label>
+                    <select id="duration" name="duration" required>
+                        <option value="1">1 heure</option>
+                        <option value="1.5">1 heure 30</option>
+                        <option value="2">2 heures</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="mealCheckbox">Souhaitez-vous commander un repas ?</label>
+                    <input type="checkbox" id="mealCheckbox">
+                </div>
+
+                <div id="meal-options" style="display: none;">
+                    <label for="meal">Choisissez votre repas</label>
+                    <select id="meal" name="meal">
+                        <option value="pasta">Pâtes à la sauce tomate</option>
+                        <option value="salad">Salade de riz et légumes</option>
+                        <option value="omelette">Omelette aux légumes</option>
+                        <option value="tartine">Tartines de fromage et avocat</option>
+                        <option value="wrap">Wrap au poulet et légumes</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="peopleCount">Nombre de personnes</label>
+                    <input type="number" id="peopleCount" name="peopleCount" min="1" max="10" required>
+                </div>
+
+                <div class="form-group">
+                    <span id="total-price">Prix total : 0.00 €</span>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn">Réserver maintenant</button>
+                </div>
+            </form>
+        </section>
+
+        <section id="payment-section" style="display: none;">
+            <h2>Récapitulatif de votre réservation</h2>
+            <p id="summary"></p>
+            <button class="btn">Payer et confirmer</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Easy Cook Station. Tous droits réservés.</p>
+    </footer>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>

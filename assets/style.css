@@ -1,0 +1,103 @@
+/* Style général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header */
+header {
+    background-color: #ff7043; /* Couleur vive pour attirer l'attention */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+/* Sections principales */
+main {
+    padding: 20px;
+}
+
+#features {
+    margin: 20px 0;
+}
+
+#features h2 {
+    font-size: 1.8rem;
+    color: #ff7043;
+    text-align: center;
+}
+
+#features ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 600px;
+    text-align: left;
+}
+
+#features li {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+#features li::before {
+    content: "✔";
+    color: #ff7043;
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
+
+/* Actions section */
+#actions {
+    text-align: center;
+    margin: 40px 0;
+}
+
+#actions h2 {
+    font-size: 1.8rem;
+    color: #ff7043;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ff7043;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e55e30;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #333;
+    color: white;
+    padding: 10px;
+    font-size: 0.9rem;
+}
